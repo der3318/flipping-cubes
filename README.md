@@ -1,7 +1,7 @@
 ## 🧩 Flipping Cubes
 
-![ver](https://img.shields.io/badge/version-0.1.0-blue.svg)
-![unity](https://img.shields.io/badge/unity-2019.4.3f1-green.svg)
+![ver](https://img.shields.io/badge/version-0.2.0-blue.svg)
+![unity](https://img.shields.io/badge/unity-2019.4.8f1-green.svg)
 ![flavor](https://img.shields.io/badge/flavor-win32%20x86-brightgreen.svg)
 ![size](https://img.shields.io/badge/size-51.2%20MB-yellow.svg)
 ![license](https://img.shields.io/badge/license-MIT-blueviolet.svg)
@@ -19,10 +19,11 @@ This is a simple puzzle game intrudocued and demonstrated by Mr. Chien in Taiwan
 
 
 ### ▶️ Getting Started
-Pre-built binaries can be found in [released zip](https://github.com/der3318/flipping-cubes/releases/download/v0.1.0/FlippingCubes.zip). Double click <kbd>FlippingCubes.exe</kbd> to start a game. Game stages and score board can be added or modified by changing the txt configuration files:
+Pre-built binaries can be found in [released zip](https://github.com/der3318/flipping-cubes/releases/download/v0.2.0/FlippingCubes.zip). Double click <kbd>FlippingCubes.exe</kbd> to start a game. Game stages and score board can be added or modified by changing the txt configuration files:
 
 | GameSettings/ | Usage |
 | :- | :- |
+| Background.jpg | background image including score board area |
 | ScoreBoard.txt | all the socres are stored here having one socre per line |
 | Stage{0,1:D3}.txt | stage info indicating the target postion of red, green, blue and yellow cube respectively |
 

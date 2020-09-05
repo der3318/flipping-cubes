@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameSettings : MonoBehaviour
@@ -11,6 +12,7 @@ public class GameSettings : MonoBehaviour
     public GameObject gameOverWindow;
     public GameObject cubes;
     public GameMap gameMap;
+    public Image backgroundImage;
 
     /* config */
     public int squareSize;
@@ -109,8 +111,27 @@ public class GameSettings : MonoBehaviour
         }
     }
 
+    private void LoadBackgroundImage()
+    {
+        try
+        {
+            byte[] data = File.ReadAllBytes("GameSettings/Background.jpg");
+            Texture2D texture = new Texture2D(2, 2);
+            if (texture.LoadImage(data))
+            {
+                Sprite sprite = Sprite.Create(texture, new Rect(0, 0, texture.width, texture.height), new Vector2(0, 0), 100.0f, 0, SpriteMeshType.Tight);
+                backgroundImage.GetComponent<Image>().sprite = sprite;
+            }
+        }
+        catch (Exception)
+        {
+            Debug.Log("USE_DEFAULT_BACKGROUND");
+        }
+    }
+
     void Start()
     {
+        LoadBackgroundImage();
         blockNumberSet.Clear();
         stepCount = 0;
         stage = 0;

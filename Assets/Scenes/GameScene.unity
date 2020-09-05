@@ -2885,6 +2885,7 @@ MonoBehaviour:
   gameOverWindow: {fileID: 193622827}
   cubes: {fileID: 1885726366}
   gameMap: {fileID: 121380433}
+  backgroundImage: {fileID: 512120854}
   squareSize: 10
   targetNumberList: 59000000630000005a00000064000000
   topScoreList: 0f2700000f2700000f2700000f2700000f270000
